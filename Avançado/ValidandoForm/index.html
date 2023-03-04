@@ -10,38 +10,35 @@
 </head>
 
 <body>
-    <script src="index.js"></script>
-
-    <section class="container">
-        <h1>Formulário de Cadastro</h1>
-        <ul>
-            <li>Nenhum campo pode estar vazio</li>
-            <li>Usuário só poderá conter letras e/ou números</li>
-            <li>Usuário deverá ter entre 3 e 12 caracteres</li>
-            <li>Senha precisa ter entre 6 e 12 caracteres</li>
-        </ul>
-
-        <form action="/" method="post" class="forrmulario">
-            <label>Nome</label>
-            <input type="text" class="nome">
-            <label>Sobrenome</label>
-            <input type="text" class="sobrenome">
-            <label>CPF</label>
-            <input type="text" class="CPF">
-            <label>Usuário</label>
-            <input type="text" class="user">
-            <label>Senha</label>
-            <input type="text" class="senha">
-            <label>Repetir Senha</label>
-            <input type="text" class="Rsenha">
-            <button type="submit">Enviar</button>
   
+    <section class="container">
+        <h1>Formulário de cadastro</h1>
+        <ul>
+          <li>Nenhum campo pode estar vazio</li>
+          <li>Usuário só poderá conter letras e/ou números</li>
+          <li>Usuário deverá ter entre 3 e 12 caracteres</li>
+          <li>Senha precisa ter entre 6 e 12 caracteres</li>
+        </ul>
+        
+        <form action="/" method="POST" class='formulario'>
+          <label>Nome</label>
+          <input type="text" class="nome validar">
+          <label>Sobrenome</label>
+          <input type="text" class="sobrenome validar">
+          <label>CPF</label>
+          <input type="text" class="cpf validar">
+          <label>Usuário</label>
+          <input type="text" class="usuario validar">
+          <label>Senha</label>
+          <input type="password" class="senha validar">
+          <label>Repetir Senha</label>
+          <input type="password" class="repsenha validar">
+          <button type="submit">Enviar</button>
         </form>
-
-    </section>
-
-
-
+      </section>
+    
+      <script src="main.js"></script>
+      <script src="validaCPF.js"></script>
 
 </body>
 
